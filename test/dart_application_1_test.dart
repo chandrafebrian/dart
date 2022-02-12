@@ -3,6 +3,6 @@ import 'package:test/test.dart';
 
 void main() {
   test('tes hitungan bro', () {
-    expect(calculate(), 3232);
+    expect(calculate(), 42);
   });
 }
