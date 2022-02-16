@@ -1,6 +1,6 @@
 // * contoh membuat List ------------ //
 void main(List<String> args) {
-  List<int> listkosong = [0, 0, 0, 0];
+  List<String> listkosong = [];
   List<String> namaList = [
     'a',
     'b',
@@ -62,4 +62,9 @@ void main(List<String> args) {
 
   // namaList.sort();
   // print(namaList);
+
+  // *cara maping list menggabungkan nilai int dengan string
+  listkosong = contohList.map((e) => 'ini angka ke ' + e.toString()).toList();
+  listkosong.sort();
+  print(listkosong);
 }
