@@ -63,8 +63,12 @@ void main(List<String> args) {
   // namaList.sort();
   // print(namaList);
 
-  // *cara maping list menggabungkan nilai int dengan string
-  listkosong = contohList.map((e) => 'ini angka ke ' + e.toString()).toList();
+  // *cara maping list menggabungkan tipe nilai int dengan string
+  //! listkosong tipe = Strin
+  //! contohlist tipe = int
+  listkosong = contohList
+      .map((parameterAngka) => 'ini angka ke ' + parameterAngka.toString())
+      .toList();
   listkosong.sort();
   print(listkosong);
 }
