@@ -55,10 +55,11 @@
 //
 //* ------------contoh fungsi anonymous-----------------//
 //* adalah fungsi yang tidak mempunyai nama dengan awalan function
+// * function anonymous di bawah berfungsi sebagai operator  perhitungan + dalam contoh ini
 // !
 
 void main(List<String> args) {
-  print(hitungan(10, 33, (int a, int b) => a + b));
+  print(hitungan(90, 54, (int a, int b) => a - b));
 }
 
 int hitungan(int satu, int dua, Function anonymous) {
