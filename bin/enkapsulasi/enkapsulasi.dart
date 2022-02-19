@@ -1,5 +1,6 @@
 import 'getter_setter.dart';
 
+// *enkapsulasi adalah membungkus data di dalam class menjadi private dan memvalidasi tetap aman
 void main(List<String> args) {
   // kotak1 dan kotak2 adalah identifier atau pointer penunjuk yg di gunakan untuk memanggil nilai dari class persegipanjang
 
@@ -9,7 +10,7 @@ void main(List<String> args) {
   //
   kotak1 = Persegipanjang(0, 0);
   kotak1.panjang = -1;
-  kotak1.lebar = -2;
+  kotak1.lebar = 2;
 //
 //
   kotak2 = Persegipanjang(0, 0);

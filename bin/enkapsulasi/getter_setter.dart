@@ -5,22 +5,7 @@ class Persegipanjang {
 
   Persegipanjang(this._panjang, this._lebar);
 
-//* setter adalah method atau fungsi sebagai merubah variable panjang
-  // void setpanjang(int nilai) {
-  //   if (nilai < 0) {
-  //     nilai *= 1;
-  //   }
-  //   _panjang = nilai;
-  // }
-
-// * getter adalah untuk mendapatkan nilai dari _panjang
-  // int getPanjang() {
-  //   return _panjang;
-  // }
-
-// //
-
-//* setter adalah method atau fungsi sebagai merubah nilai variable lebar
+//* setter adalah method atau fungsi untuk merubah nilai variable lebar
 
   set lebar(int nilai) {
     if (nilai < 0) {
@@ -29,7 +14,14 @@ class Persegipanjang {
     _lebar = nilai;
   }
 
-//* setter adalah method atau fungsi sebagai merubah variable panjang
+//
+  //
+// * getter adalah method atau fungsi untuk menampilkan nilai original dari variable sebelum di jalankan operator perhitungan
+  int get lebar {
+    return _lebar;
+  }
+
+//* setter adalah method atau fungsi untuk merubah variable panjang
 
   set panjang(int nilai) {
     if (nilai < 0) {
@@ -37,6 +29,14 @@ class Persegipanjang {
     }
     _panjang = nilai;
   }
+
+  //
+  //
+  // * getter adalah method atau fungsi untuk menampilkan nilai original dari variable sebelum di jalankan operator perhitungan
+  int get panjang {
+    return _panjang;
+  }
+  //
 
 //* ini adalah fungsi dengan nama fungsihitungluas()
 
