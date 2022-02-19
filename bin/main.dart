@@ -1,11 +1,11 @@
 // // import 'package:dart_application_1/dart_application_1.dart'
 // //     as dart_application_1;
 
-// import 'dart:io';
+import 'dart:io';
 
-// void main(List<String> arguments) {
-//   String input = stdin.readLineSync()!;
-//   int number = int.tryParse(input)!;
+void main(List<String> arguments) {
+  String input = stdin.readLineSync()!;
+  int number = int.tryParse(input)!;
 
-//   print(number + 10);
-// }
+  print(number + 10);
+}
