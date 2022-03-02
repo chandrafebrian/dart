@@ -1,7 +1,10 @@
 import 'parent_buah.dart';
 
 class Buahapple extends ParentBuah {
-  String apple() => 'ini buah apple';
+  @override
+  String parent() {
+    return 'krauk dari apple';
+  }
 
   @override
   String move() {
