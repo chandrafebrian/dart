@@ -1,6 +1,7 @@
+import 'mixin_drink.dart';
 import 'parent_buah.dart';
 
-class Buahjeruk extends ParentBuah {
+class Buahjeruk extends ParentBuah with MixinDrink {
   String jeruk() => 'ini buah jeruk';
 
   @override
