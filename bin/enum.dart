@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  Hewan h = Hewan(status: StatusHewan.normal);
+  Hewan h = Hewan(status: StatusHewan.berat);
   h.move();
 }
 
