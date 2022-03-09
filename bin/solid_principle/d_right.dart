@@ -1,8 +1,10 @@
+// * RIGHT
+
 class User {
   //  user related things
 }
 
-// *high level modul bergantung pada abstraction
+// * high level modul(tidak mudah berubah) bergantung pada abstraction
 class UserManager {
   final IDatastorage datastorage;
 
@@ -18,7 +20,7 @@ abstract class IDatastorage {
   void saveData(User user);
 }
 
-// *low level modul (detail ) bergantung pada abstraction modul
+// * low level modul (detail mudah berubah ) harus bergantung pada abstraction modul
 class Firebase implements IDatastorage {
   @override
   void saveData(User user) {
@@ -27,7 +29,7 @@ class Firebase implements IDatastorage {
   }
 }
 
-// * low level modul (detail) bergantung pada abstraction moduls
+// * low level modul (detail mudah berubah  ) harus  bergantung pada abstraction moduls
 class Localstorage implements IDatastorage {
   @override
   void saveData(User user) {
