@@ -1,8 +1,8 @@
 void main(List<String> args) {
-  Hero a = Hero(30);
+  Hero a = Hero(10);
   Hero b = Hero(30);
 
-  print(a > b);
+  print((a < b));
 }
 
 class Hero {
@@ -10,10 +10,19 @@ class Hero {
 
   Hero(this.power);
 
-  Hero operator +(Hero other) {
-    return Hero(power + other.power);
+  Hero operator +(var other) {
+    if (other is Hero) {
+      return Hero(power + other.power);
+    } else if (other is int) {
+      return Hero(power + other);
+    } else {
+      return this;
+    }
   }
 
+// * operator override adalah keyword untuk
+//
+//
   @override
   // ignore: hash_and_equals
   bool operator ==(var other) {
@@ -30,6 +39,17 @@ class Hero {
   bool operator >(var other) {
     if (other is Hero) {
       if (power > other.power) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  @override
+  // ignore: override_on_non_overriding_member
+  bool operator <(var other) {
+    if (other is Hero) {
+      if (power < other.power) {
         return true;
       }
     }
