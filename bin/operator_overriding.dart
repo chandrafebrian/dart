@@ -20,7 +20,7 @@ class Hero {
     }
   }
 
-// * operator override adalah keyword untuk
+// * operator override adalah keyword untuk membuat operator contoh == > < => dll, dan membandingkan dengan objek class nyas
 //
 //
   @override
