@@ -21,9 +21,9 @@ void main(List<String> args) {
   print(variableSaya.name);
 }
 
-// kapan pakai dynamic : kalau variable saya ada kemungkinan bebas bisa di isi  nilai atau object apapun
-// kapan pakai var : kalau saya tidak tahu , di awal itu apa isi tipe data nya , tapi nanti kedepan nya tipe data nya sudah pasti baku dan jelas
-
 class Orangvardynamic {
   String name = 'chandra';
 }
+
+// kapan pakai dynamic : kalau variable saya ada kemungkinan bebas bisa di isi  nilai atau object apapun
+// kapan pakai var : kalau saya tidak tahu , di awal itu apa isi tipe data nya , tapi nanti kedepan nya tipe data nya sudah pasti baku dan jelas
