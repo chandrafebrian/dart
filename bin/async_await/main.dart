@@ -5,9 +5,8 @@ void main(List<String> args) {
 
   print('job 1');
   print('job 2');
-  a.getDataAsync().then((_) {
-    print('print job 3 : ' + a.name);
-  });
+  a.getData();
+  a.getDataAsync().then(((value) => print('job 3' + a.name)));
 
   print('job 4');
 }

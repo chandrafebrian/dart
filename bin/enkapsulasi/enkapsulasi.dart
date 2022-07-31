@@ -7,12 +7,12 @@ void main(List<String> args) {
   Persegipanjang kotak1, kotak2;
 
   //
-  //
+  // -1 * 2 = 2
   kotak1 = Persegipanjang(0, 0);
   kotak1.panjang = -1;
   kotak1.lebar = 2;
 //
-//
+//2 * 2 = 4
   kotak2 = Persegipanjang(0, 0);
   kotak2.panjang = 2;
   kotak2.lebar = 2;
